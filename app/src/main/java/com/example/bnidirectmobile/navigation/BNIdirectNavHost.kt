@@ -8,6 +8,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.common.navigation.BNIdirectNavGraphs
 import com.example.common.navigation.base.BaseNavigator
 import com.example.common.navigation.graph.StartupNavGraphRoute
+import com.example.feature_startup.navigation.route.SplashScreenRoute
 import kotlin.reflect.KClass
 
 @Composable

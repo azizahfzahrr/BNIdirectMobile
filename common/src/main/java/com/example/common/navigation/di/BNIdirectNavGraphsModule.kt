@@ -12,10 +12,22 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 class BNIdirectNavGraphsModule {
 
+//    @Provides
+//    fun provideBNIdirectNavGraphs(
+//        startupNavGraph: StartupNavGraph,
+//        homeNavGraph: HomeNavGraph,
+//    ) = BNIdirectNavGraphs(
+//        listOf(
+//            startupNavGraph,
+//            homeNavGraph
+//        )
+//    )
+// }
+
     @Provides
     fun provideBNIdirectNavGraphs(
         startupNavGraph: StartupNavGraph,
-        homeNavGraph: HomeNavGraph,
+        homeNavGraph: HomeNavGraph
     ) = BNIdirectNavGraphs(
         listOf(
             startupNavGraph,
@@ -23,16 +35,3 @@ class BNIdirectNavGraphsModule {
         )
     )
 }
-
-//    @Provides
-//    fun provideBNIdirectNavGraphs(
-//        startupNavGraph: StartupNavGraph,
-//        homeNavGraph: HomeNavGraph
-//    ): BNIdirectNavGraphs {
-//        return BNIdirectNavGraphs(
-//            listOf(
-//                startupNavGraph,
-//                homeNavGraph
-//            )
-//        )
-//    }
