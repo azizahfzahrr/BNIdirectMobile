@@ -7,17 +7,16 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.example.common.navigation.BNIdirectNavGraphs
 import com.example.common.navigation.base.BaseNavigator
-import com.example.common.navigation.graph.StartupNavGraphRoute
-import com.example.feature_startup.navigation.route.SplashScreenRoute
+import com.example.common.navigation.graph.route.StartupNavGraphRoute
 import kotlin.reflect.KClass
 
 @Composable
 fun BNIdirectNavHost(
     bniDirectNavGraphs: BNIdirectNavGraphs,
     modifier: Modifier = Modifier,
-//    startDestination: String = SplashScreenRoute.routeName
     startDestination: KClass<*> = StartupNavGraphRoute::class
-){
+//    startDestination: String = "startup" // Route untuk StartupNavGraph
+) {
     val navController = rememberNavController()
     val navGraphs = remember { bniDirectNavGraphs.getNavGraphs() }
     val navigator = remember { BaseNavigator(navController, navGraphs) }
@@ -26,8 +25,9 @@ fun BNIdirectNavHost(
         modifier = modifier,
         navController = navController,
         startDestination = startDestination
-    ){
-        navGraphs.forEach {
-            navGraph -> navGraph.buildGraph(navigator, this) }
+    ) {
+        navGraphs.forEach { navGraph ->
+            navGraph.buildGraph(navigator, this)
+        }
     }
 }

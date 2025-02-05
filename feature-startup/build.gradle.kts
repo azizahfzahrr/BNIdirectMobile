@@ -45,11 +45,13 @@ android {
 dependencies {
 
     implementation(project(":common"))
+    implementation(project(":feature-walkthrough"))
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
     implementation(libs.androidx.navigation.compose)
     implementation(libs.hilt.android)
     implementation(libs.hilt.compiler)
+    implementation(project(":feature-home"))
     kapt(libs.hilt.compiler)
     implementation("androidx.compose.ui:ui-tooling-preview")
 

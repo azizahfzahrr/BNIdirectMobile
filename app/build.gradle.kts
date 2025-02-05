@@ -49,6 +49,8 @@ dependencies {
     implementation(project(":common"))
     implementation(project(":feature-startup"))
     implementation(project(":feature-home"))
+    implementation(project(":feature-walkthrough"))
+    implementation(project(":feature-profile"))
 
     implementation (libs.hilt.android)
     implementation(libs.hilt.compiler)

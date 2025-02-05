@@ -1,0 +1,23 @@
+{
+  "walkthroughTitle1": "One Token for Every Transaction!",
+  "walkthroughDesc1": "One Token for Every Transaction more easy and secure.",
+  "walkthroughTitle2": "Effortless Approval, Anytime, Anywhere!",
+  "walkthroughDesc2": "Kelola dan setujui tugas dari berbagai channel dengan cepat.",
+  "walkthroughTitle3": "Get Instant Financial Insights!",
+  "walkthroughDesc3": "Akses data keuangan real-time kapan saja, di mana sajas.",
+  "loginTitle": "Masuk",
+  "loginSubTitle": "Masuk ke BNIdirect Mobile",
+  "loginInputCorp": "ID Perusahaan",
+  "loginInputUser": "ID Pengguna",
+  "loginPassword": "Kata Sandi",
+  "loginForgotPass": "Lupa Password",
+  "loginButton": "Masuk",
+  "OTPTitle": "Verifikasi Akun",
+  "OTPSend": "Kami telah mengirimkan pesan berisi kode OTP ke ",
+  "OTPNotSend": "Belum menerima kode?",
+  "OTPRequestCode": "Minta kode baru dalam ",
+  "OTPRequestAction": "Klik disini",
+  "OTPWrong": "Kode OTP yang anda masukan salah",
+  "OTPLockTitle": "Akun anda terkunci",
+  "OTPLockDesc": "Anda telah salah memasukkan kode OTP 5 kali. Akun Anda terkunci selama 3 jam. Silakan tunggu dan coba lagi nanti."
+}

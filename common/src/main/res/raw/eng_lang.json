@@ -1,0 +1,23 @@
+{
+  "walkthroughTitle1": "One Token for Every Transaction!",
+  "walkthroughDesc1": "One Token for Every Transaction more easy and secure.",
+  "walkthroughTitle2": "Effortless Approval, Anytime, Anywhere!",
+  "walkthroughDesc2": "More fast to manage and approve task from many channel.",
+  "walkthroughTitle3": "Get Instant Financial Insights!",
+  "walkthroughDesc3": "You can real time access financial account anywhere and anytime.",
+  "loginSubTitle": "Log In to BNIdirect Mobile",
+  "loginTitle": "Log in",
+  "loginInputCorp": "Corporate ID",
+  "loginInputUser": "User ID",
+  "loginPassword": "Password",
+  "loginForgotPass": "Forgot Password",
+  "loginButton": "Log In",
+  "OTPTitle": "Account Verification",
+  "OTPSend": "We have sent a message containing an OTP Code to",
+  "OTPNotSend": "Haven't Received OTP Code?",
+  "OTPRequestCode": "Request a new code on ",
+  "OTPRequestAction": "Click here",
+  "OTPWrong": "OTP Code you entered is incorrect",
+  "OTPLockTitle": "Your account has been locked",
+  "OTPLockDesc": "You have entered wrong OTP code 5 times. Your account is now locked for 3 hours, please try again later."
+}

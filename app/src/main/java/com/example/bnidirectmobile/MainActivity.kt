@@ -17,22 +17,6 @@ import com.example.feature_startup.navigation.screen.SplashScreen
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-//@AndroidEntryPoint
-//class MainActivity : ComponentActivity() {
-//
-//    @Inject
-//    lateinit var bniDirectNavGraphs: BNIdirectNavGraphs
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        enableEdgeToEdge()
-//        setContent {
-//            BNIdirectMobileTheme {
-//                BNIdirectNavHost(bniDirectNavGraphs = bniDirectNavGraphs)
-//            }
-//        }
-//    }
-//}
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -45,36 +29,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             BNIdirectMobileTheme {
-                val navController = rememberNavController()
-                val navigator = remember { BaseNavigator(navController, bniDirectNavGraphs.getNavGraphs()) }
-
-                Surface(modifier = Modifier.fillMaxSize()){
-                    SplashScreen(navigator = navigator)
+                Surface(modifier = Modifier.fillMaxSize()) {
                     BNIdirectNavHost(bniDirectNavGraphs = bniDirectNavGraphs)
                 }
-//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    Greeting(
-//                        name = "Android",
-//                        modifier = Modifier.padding(innerPadding)
-//                    )
-//                }
             }
         }
     }
 }
-
-//@Composable
-//fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    Text(
-//        text = "Hello $name!",
-//        modifier = modifier
-//    )
-//}
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    BNIdirectMobileTheme {
-//        Greeting("Android")
-//    }
-//}
